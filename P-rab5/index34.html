@@ -1,52 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Самостоятельная работа 5 task1</title>
+		<title>Самостоятельная работа 5</title>
 	</head>
   	<body>
-		<script>
-		where=window.prompt("Введите номер месяц года");
-	switch(where){
-		case "1":
-		document.write("Зима");
-		break;
-		case "2":
-		document.write("Зима");
-		break;
-		case "3":
-		document.write("Весна");
-		break;
-		case "4":
-		document.write("Весна");
-		break;
-		case "5":
-		document.write("Весна");
-		break;
-		case "6":
-		document.write("Лето");
-		break;
-		case "7":
-		document.write("Лето");
-		break;
-		case "8":
-		document.write("Лето");
-		break;
-		case "9":
-		document.write("Осень");
-		break;
-		case "10":
-		document.write("Осень");
-		break;
-		case "11":
-		document.write("Осень");
-		break;
-		case "12":
-		document.write("Зима");
-		break;
-		
-		default:
-		document.write("Нету такого месяца");
-}
-</script>
+	<script>	
+			var month = prompt("Введите номер месяц года").toLowerCase();
+			if( month=='декабрь' || month=='december' || month=='январь'|| month=='january' ||  month=='февраль'|| month=='february' || month=='i' || month=='ii' || month=='xii' ||
+				parseInt(month) == 1 || parseInt(month) == 2 || parseInt(month) == 12 ) alert('зима');
+
+			else if (month == 'март' || month == 'march' ||  month == 'апрель' || month == 'april' ||  month == 'май'  ||  month == 'may'  ||  month=='iii' || month=='iv' || month=='v' ||  parseInt(month) == 3 || parseInt(month) == 4 ||  parseInt(month) == 5) alert('весна');
+
+			else if (month == 'июнь' || month == 'june' ||  month=='июль' || month=='july' || month=='август' || month=='august'
+				|| month=='vi' ||   month=='vii' || month=='viii' ||  parseInt(month) == 6 || parseInt(month) == 7 ||  parseInt(month) == 8) alert('лето');
+
+			else if (month == 'сентябрь' || month == 'september' ||  month=='октяборь' || month=='october' || month=='нояборь' || month=='november'
+				|| month=='ix' ||   month=='x' || month=='xi' ||  parseInt(month) == 9 || parseInt(month) == 10 ||  parseInt(month) == 11) alert('осень');
+
+			else alert("Нету такого месяца");
+	</script>
 	</body>
 </html>

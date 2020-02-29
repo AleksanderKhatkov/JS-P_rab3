@@ -5,16 +5,16 @@
 </head>
 	<body>
 <script>
-	
-	var a=0; var b =0; var c=0;
-	while (a <= 0 && b <= 0 && a <= 0 || Number.isNaN(a) == true || Number.isNaN(b) == true){
+	 var a = prompt('Введите первое значение', 0); var b = prompt('Введите второе значение', 0);
+            var res = 0;
+            (Number.isNaN(parseInt(a)) == false && Number.isNaN(parseInt(b)) == false) ?
+            (Number.isInteger(a)  && Number.isInteger(b)) ? res = ((parseInt(a) + parseInt(a)) == parseInt(b)) ? 'Значения равны' : 'Значения не равны':
+            (Number.isInteger(a)) ? res = ((parseInt(a) + parseInt(a)) === parseFloat(b)) ? 'Значения равны' : 'Значения не равны' :
+            (Number.isInteger(b)) ? res = ((parseFloat(a) + parseFloat(a)) === parseInt(b)) ? 'Значения равны' : 'Значения не равны' :
+            res = ((parseFloat(a) + parseFloat(a)) === parseFloat(b)) ? 'Значения равны' : 'Значения не равны':
+            res = ((a + a) == b) ? 'Значения равны' : 'Значения не равны';
+            document.write(res);
 
-	  a = parseInt(prompt('Введите первое число'));
-      b = parseInt(prompt('Введите второе число'));
-}
-	 var res = ((a+a)== b) ? 'значения равны': 'значения не равны';
-	 document.write(res);
-   
 </script>
 </body>
 </html>

@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-		<title>Самостоятельная работа 4 по JS task-1</title>
+		<title>Самостоятельная работа 4 по JS</title>
 </head>
 	<body>
 <script>
-	 var a = prompt('Введи первую переменную: a');
-	 var b = prompt('Введи вторую переменную: b');
-	 var c = Number(a);
-	 var d = Number(b);
-	 var result = (Math.sqrt(c * d)) < 4 ? 'Мало': 'Много';
-	alert(result)
+	
+	 var a = parseInt(prompt('Введи первую переменную: a'));
+	 var b = parseInt(prompt('Введи вторую переменную: b'));
+	 
+	 if (a * b < 0 || Number.isNaN(a)==true || Number.isNaN(b)==true ) {
+       alert('Вы указали неверное значение!');
+          exit;
+		  }
+	 var result = (Math.sqrt(a * b)) == 4 ? 'Pавно': (Math.sqrt(a*b)) < 4 ? 'Мало' : 'Много';
+	alert(result);
+	
 </script>
 </body>
 </html>
